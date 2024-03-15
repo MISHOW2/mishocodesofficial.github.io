@@ -7,7 +7,7 @@
   height: 20vh; /* 20% of the viewport height */
   text-align: center;
   padding-top: 10vh; /* 10% of the viewport height */
-  max-width: -300px;
+  max-width: 100%;
 }
 
 
