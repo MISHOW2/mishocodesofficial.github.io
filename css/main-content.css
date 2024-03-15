@@ -80,24 +80,26 @@
 
 .product-container{
   display: inline-block;
-  align-items: center;
-  justify-items: center;
+  margin-top: 140px;
+
 }
 
 .image-tribute{
+  
   display: inline-block;
-  width: 299px;
-  margin-left: px;
+ margin-right: 140px;
+vertical-align: top;
+ margin-top: 190px;
 }
 .image-tribute img {
   
-  width: 450px;
+  width: 490px;
 }
 
 .image-tribute-details{
   display: inline-block;
   width: 400px;
-  
+  vertical-align: top;
 }
 
 .button-size{
