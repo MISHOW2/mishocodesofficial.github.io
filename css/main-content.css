@@ -1,15 +1,25 @@
-
-
-.welcome-message{
+/* CSS */
+/* Fixing welcome message */
+.welcome-message {
   background-color: #000;
- 
   color: white;
-  height: 20vh; /* 20% of the viewport height */
+  height: 20vh;
   text-align: center;
-  padding-top: 10vh; /* 10% of the viewport height */
-  max-width: 100%;
+  padding-top: 10vh;
+  max-width: 100% /* Changed to a positive value */
+  
+  
 }
 
+/* Correcting viewport 
+<meta name="viewport" content="width=device-width, initial-scale=1">*/
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 .p1{
  font-size: 30px;
@@ -38,7 +48,8 @@
    flex-direction: column;
 }
 
-.inlineblock-container {
+/* Correcting class name */
+.inblock-container {
   padding: 5%;
   text-align: center;
   margin-top: 10px;
@@ -79,16 +90,22 @@
 }
 
 .product-container{
-  display: inline-block;
-  margin-top: 140px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
 
+  margin-top: 140px;
+ justify-content: center;
+ margin-left: 60px;
+ margin-top: 10px;
+ 
 }
 
 .image-tribute{
   
   display: inline-block;
  margin-right: 140px;
-vertical-align: top;
+
  margin-top: 190px;
 }
 .image-tribute img {
@@ -100,6 +117,8 @@ vertical-align: top;
   display: inline-block;
   width: 400px;
   vertical-align: top;
+  
+  text-align:start
 }
 
 .button-size{
@@ -219,4 +238,27 @@ button{
   font-weight: 600;
   font-size: 13px;
   text-decoration: underline;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .par-1 {
+    font-size: 30px; /* Adjusted font size */
+  }
+
+  .product-container {
+    grid-template-columns: 1fr; /* Adjusted grid for smaller screens */
+  }
+
+  .image-tribute {
+    margin-top: 20px; /* Adjusted margin */
+  }
+
+  .name-p {
+    font-size: 20px; /* Adjusted font size */
+  }
+
+  .p-details {
+    margin-top: 20px; /* Adjusted margin */
+  }
 }
