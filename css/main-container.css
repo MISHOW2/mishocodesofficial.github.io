@@ -196,45 +196,7 @@ button{
 }
 
 /* Media query for smaller screens */
-@media screen and (max-width: 700px) {
-  
-  
-  .par-1 {
-    font-size: 30px; /* Adjusted font size */
-  }
 
-  .product-container {
-    grid-template-columns: 1fr; /* Adjusting grid to single column */
-    margin-top: 20px; /* Reducing margin-top */
-    margin-left: 20px; /* Reducing margin-left */
-    justify-content: center; /* Centering content */
-  }
-
-  .image-tribute {
-    margin-right: 0; /* Removing right margin */
-    margin-top: 10px; /* Adjusting top margin */
-    text-align: center; /* Centering content */
-  }
-
-  .image-tribute img {
-    width: 100%; /* Making image responsive */
-    max-width: 100%; /* Ensuring image doesn't exceed container width */
-  }
-
-  .image-tribute-details {
-    width: 100%; /* Making details container responsive */
-    margin-top: 10px; /* Adjusting top margin */
-     /* Centering content */
-  }
-
-  .name-p {
-    font-size: 20px; /* Adjusted font size */
-  }
-
-  .p-details {
-    margin-top: 20px; /* Adjusted margin */
-  }
-}
 
 .Information{
   padding-top: 30px;
@@ -374,72 +336,121 @@ opacity: 0.7;
  
 
 
+/* Original CSS */
 
+/* .welcome-message and other styles... */
 
+/* Media query for smaller screens */
+@media screen and (max-width: 700px) {
+  .par-1 {
+    font-size: 30px; /* Adjusted font size */
+    align-items: center;
+    text-align: center;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
- .footer-Nav{
-  margin:30px 0;
+  .product-container {
+    grid-template-columns: 1fr;
+    margin: 0; /* Removing right margin */
+    justify-content: center; /* Centering content */
+  }
   
- }
+  .image-tribute {
+    margin-top: 10px; /* Adjusting top margin */
+    margin-right: 0; /* Removing right margin */
+    text-align: center; /* Centering content */
+  }
+  
+  .image-tribute-details {
+    width: 100%; /* Making details container responsive */
+    margin-top: 10px; /* Adjusting top margin */
+    margin-right: 0; /* Removing right margin */
+    
+  }
+  
+  .image-tribute img {
+    width: 100%; /* Making image responsive */
+    max-width: 100%; /* Ensuring image doesn't exceed container width */
+    padding: 0; /* Removing padding */
+  }
+  
 
- .footer-Nav ul{
+  .name-p {
+    font-size: 20px; /* Adjusted font size */
+  }
+
+  .p-details {
+    margin-top: 20px; /* Adjusted margin */
+  }
+
+  /* Additional CSS to prevent overflow */
+  body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; /* Prevent horizontal overflow */
+  }
+
+  
+  .footer-Nav ul {
+    flex-direction: column;
+  }
+
+  .footer-Nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+}
+
+/* Additional CSS */
+.footer-Nav {
+  margin: 30px 0;
+}
+
+.footer-Nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
- }
- .footer-Nav ul li a{
- color: white;
- margin: 20px;
- text-decoration: none;
- font-size: 13px;
- opacity: 0.7;
- transition: 0.5s;
- }
+}
 
- .footer-Nav ul li a:hover{
+.footer-Nav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 13px;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footer-Nav ul li a:hover {
   opacity: 1;
+}
 
- }
- .footer-bottom{
+.footer-bottom {
   background-color: black;
   padding: 20px;
   text-align: center;
+}
 
- }
-.footer-bottom p{
+.footer-bottom p {
   color: white;
 }
 
-.designer{
+.designer {
   opacity: 0.7;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 400;
-margin: 0px 5px;
+  margin: 0px 5px;
 }
 
-@media (max-width:700px) {
-  .footer-Nav ul{
-   
-    flex-direction: column;
-   }
-   .footer-Nav ul li {
-    width: 100%;
-   
-    text-align: center;
-    margin: 10px;
-   }
-}
+
+
+
+
+
+
+
+
+
+
+
