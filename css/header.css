@@ -1,44 +1,58 @@
+/* Original CSS */
 
- .navbar ul{
+/* Common styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+}
+
+.navbar {
+  display: flex;
+  text-align: center;
+  height: 100px; /* Lowercase 'px' */
+  align-items: center;
+  justify-content: right; /* Consider using 'flex-end' */
+  margin-left: 400px; /* This might need adjustment for responsiveness */
+}
+
+.navbar ul {
   display: flex;
   justify-content: center;
   list-style: none;
- }
- .navbar ul li a{
- color: black;
- margin: 20px;
- text-decoration: none;
- font-size: 13px;
- opacity: 0.7;
- transition: 0.5s;
- }
-
- .navbar ul li a:hover{
-  opacity: 1;
-
- }
- /* Style the dropdown button */
-.dropbtn {
-  cursor: pointer;
+  align-items: center;
 }
 
-/* Dropdown container */
+.navbar ul li a {
+  color: black;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 13px;
+  opacity: 0.7;
+  transition: 0.5s;
+  align-items: center;
+}
+
+.navbar ul li a:hover {
+  opacity: 1;
+}
+
+/* Dropdown */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
-  position: relative;
+  position: absolute; /* Adjusted for dropdown */
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -46,26 +60,54 @@
   display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+.icon-buttons a {
+  color: black;
+  margin: 20px;
+}
 
- @media (max-width:700px) {
-  .navbar ul{
-   
-    flex-direction: column;
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+   .header{
+    margin-bottom: 30px;
+  
+    justify-content: space-between;
    }
-   .navbar ul li {
-    width: 100%;
-   
+ 
+  .navbar {
+    
+    flex-direction: column;
+    margin-left: 0; /* Reset margin */
+  
+  }
+
+  .navbar ul li a {
+    margin: 10px; /* Adjusted margin */
     text-align: center;
     margin: 10px;
-   }
+  }
+
+  .icon-buttons a {
+    margin: 10px; /* Adjusted margin */
+
+     /* Additional CSS to prevent overflow */
+  
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centering vertically */
+  }
+
+  .footer-Nav ul li {
+    text-align: center;
+    margin: 10px;
+  }
 }
