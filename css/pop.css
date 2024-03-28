@@ -1,0 +1,59 @@
+/* Modal Content */
+.modal{
+  align-items: center;
+  justify-content:Right;
+  text-align: center;
+  position:fixed;
+  
+  margin-left: 800px;
+  margin-top: 300px;
+
+}
+
+.modal-content {
+  display: inline-block;
+  background-color: #f565e9;
+ 
+  padding: 20px;
+  border: 1px solid #888;
+
+}
+
+.input-email{
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 10px;
+
+  width: 190px;
+  height: 40px;
+  border-style:NONE;
+  border-radius: blue;
+  
+}
+.button-subscribe{
+  display: inline-block;
+  min-height: 40px;
+  padding: 12px 24px;
+  transition: .2s ease;
+  transition-property: opacity, border-color, background-color, color;
+  border-width: 1px;
+  border-style:NONE;
+  border-radius: 4px;
+  border-color: #343534;
+
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
