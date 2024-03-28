@@ -7,7 +7,7 @@
  <link rel="stylesheet" href="css/main-container.css">
  <link rel="stylesheet" href="css/boddy.css">
  <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/cart.css">
+
  <link rel="stylesheet" href="css/pop.css">
   <title>home</title>
 </head>
@@ -35,8 +35,11 @@
        </div> 
        <div class="icon-buttons">
         <a href="login.html"><i class="fa-regular fa-user"></i></a>
-      
-         <a href=""><i class="fa-solid fa-cart-shopping"></i></a> 
+         <div class="cart">
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a> 
+         
+         </div>
+         
         
         
        </div>
@@ -83,38 +86,55 @@
   <div class="inblock-container">
       
     <div class="single-image">
-     <img src="image/6front.webp" alt="">
+      <div  class="image-incloser" style="position: relative;">
+        <img src="image/6front.webp" alt="">
+        <div class="new-text" >NEW</div>
+    </div>
+  
        <div class="price">
 
-        <span>R 100</span>
+        <span>R 350</span>
         <button class="button-price">+</button>
        </div>
       </div>
       <div class="single-image">
-       <img src="image/2.jpg" alt="">
+        <div  class="image-incloser" style="position: relative;">
+          <img src="image/3.jpg" alt="">
+          <div class="new-text" >NEW</div>
+      </div>
+    
          <div class="price">
- 
-         <span>R 100</span>
-         <button class="button-price">+</button>
-       </div>
-       </div>
+  
+          <span>R 350</span>
+          <button class="button-price">+</button>
+         </div>
+        </div>
 
-       <div class="single-image">
-       <img src="image/3.jpg" alt="">
-         <div class="price">
- 
-         <span>R 100</span>
-         <button class="button-price">+</button>
-         </div>
-       </div>
-     <div class="single-image">
-       <img src="image/4.jpg" alt="">
-         <div class="price">
-         <span>R 100</span>
-         
-         <button class="button-price">+</button>
-         </div>
-       </div>
+        <div class="single-image">
+          <div  class="image-incloser" style="position: relative;">
+            <img src="image/1.jpg" alt="">
+            <div class="new-text" >NEW</div>
+        </div>
+      
+           <div class="price">
+    
+            <span>R 350</span>
+            <button class="button-price">+</button>
+           </div>
+          </div>
+
+          <div class="single-image">
+            <div  class="image-incloser" style="position: relative;">
+              <img src="image/2.jpg" alt="">
+              <div class="new-text" >NEW</div>
+          </div>
+        
+             <div class="price">
+      
+              <span>R 350</span>
+              <button class="button-price">+</button>
+             </div>
+            </div>
        
         
    </div>
@@ -182,7 +202,9 @@
          
         <div class="check-out">
         <div class="add-button">
-          <button class="ADD">ADD TO BAG</button>
+          <button onclick="
+              addbutton();
+            " class="ADD">ADD TO BAG</button>
         </div>
           
        <div class="buy-button">
@@ -196,13 +218,7 @@
       </div>
       
        </div>
-       
-   
-       
-       
-       
-       
-          
+            
           
     </div>
     </div>
@@ -228,41 +244,60 @@
       </p>
       <span >More New Arrivals</span>
     </div>
+   
+   
     <div class="inblock-container">
-        
+      
       <div class="single-image">
-       <img src="image/jogger7.jpeg" alt="">
+        <div  class="image-incloser" style="position: relative;">
+          <img src="image/jogger1.jpg" alt="">
+          <div class="new-text" >NEW</div>
+      </div>
+    
          <div class="price">
   
-          <span>R 100</span>
+          <span>R 350</span>
           <button class="button-price">+</button>
          </div>
         </div>
         <div class="single-image">
-         <img src="image/jogger8.jpeg" alt="">
+          <div  class="image-incloser" style="position: relative;">
+            <img src="image/jogger2.jpg" alt="">
+            <div class="new-text" >NEW</div>
+        </div>
+      
            <div class="price">
-   
-           <span>R 100</span>
-           <button class="button-price">+</button>
-         </div>
-         </div>
+    
+            <span>R 350</span>
+            <button class="button-price">+</button>
+           </div>
+          </div>
   
-         <div class="single-image">
-         <img src="image/jogger9.jpeg" alt="">
-           <div class="price">
-   
-           <span>R 100</span>
-           <button class="button-price">+</button>
-           </div>
-         </div>
-       <div class="single-image">
-         <img src="image/jogger10.jpeg" alt="">
-           <div class="price">
-           <span>R 100</span>
-           
-           <button class="button-price">+</button>
-           </div>
-         </div>
+          <div class="single-image">
+            <div  class="image-incloser" style="position: relative;">
+              <img src="image/jogger7.jpeg" alt="">
+              <div class="new-text" >NEW</div>
+          </div>
+        
+             <div class="price">
+      
+              <span>R 350</span>
+              <button class="button-price">+</button>
+             </div>
+            </div>
+  
+            <div class="single-image">
+              <div  class="image-incloser" style="position: relative;">
+                <img src="image/jogger8.jpeg" alt="">
+                <div class="new-text" >NEW</div>
+            </div>
+          
+               <div class="price">
+        
+                <span>R 350</span>
+                <button class="button-price">+</button>
+               </div>
+              </div>
          
           
      </div>
@@ -291,31 +326,10 @@
       </div>
 
 
-   <!--   <script src="script.js"> 
-      // Get the modal
-var modal = document.getElementById("newsletterModal");
+      <script>
+         function addbutton(){
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the page loads, display the modal
-window.onload = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-      
-      </script>-->
+         }
+      </script>
 </body>
 </html>
